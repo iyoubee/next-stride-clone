@@ -1,6 +1,6 @@
 {
   "name": "next-stride-clone",
-  "version": "2.6.4.1",
+  "version": "2.6.4",
   "description": "CLI tools for Next JS App 🚀",
   "main": "./lib/index.js",
   "bin": {
