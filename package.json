@@ -1,0 +1,62 @@
+{
+  "name": "next-stride-clone",
+  "version": "2.6.4.1",
+  "description": "CLI tools for Next JS App 🚀",
+  "main": "./lib/index.js",
+  "bin": {
+    "stride": "./lib/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "build": "rm -rf lib && tsc -p .",
+    "release": "npm run test-all && npm run build && np",
+    "local": "npm run build && npm link",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "format": "prettier --write .",
+    "test-all": "npm run check-format && npm run check-lint && npm run check-types",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iyoubee/next-stride-clone.git"
+  },
+  "keywords": [
+    "cli",
+    "next",
+    "nextjs",
+    "react",
+    "directory",
+    "folder",
+    "scaffolding"
+  ],
+  "author": "DJaegerScript",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iyoubee/next-stride-clone/issues"
+  },
+  "homepage": "https://github.com/iyoubee/next-stride-clone#readme",
+  "devDependencies": {
+    "@types/figlet": "^1.5.4",
+    "@types/fs-extra": "^9.0.13",
+    "@types/glob": "^7.2.0",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": ">=5.16.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.0",
+    "nodemon": "^2.0.18",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "commander": "^9.3.0",
+    "figlet": "^1.5.2",
+    "fs-extra": "^10.1.0",
+    "kleur": "^4.1.5"
+  }
+}
